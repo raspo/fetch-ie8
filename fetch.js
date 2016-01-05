@@ -1,12 +1,6 @@
 (function() {
   'use strict';
 
-  // if __disableNativeFetch is set to true, the it will always polyfill fetch
-  // with Ajax.
-  if (!self.__disableNativeFetch && self.fetch) {
-    return
-  }
-
   function normalizeName(name) {
     if (typeof name !== 'string') {
       name = String(name)
